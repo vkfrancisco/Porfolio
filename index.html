@@ -8,11 +8,12 @@
         My Portfolio
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="img/vk1.png">
 
     <style>
           
          #parallax-image{
-            background-image: url("img/1.png");
+            background-image: url("img/bg1.png");
             height: 650px;
             background-attachment: fixed;
             background-position: center;
@@ -22,7 +23,7 @@
         }
 
         #parallax-image1{
-            background-image: url("img/2.png");
+            background-image: url("img/4.png");
             height: 780px;
             background-attachment: fixed;
             background-position: center;
@@ -31,19 +32,11 @@
             padding-bottom: 100px; 
         }
 
-        #parallax-image2{
-            background-image: url("img/3.png");
-            height: 500px;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-bottom: 100px; 
-        }
+        
 
         #parallax-image3{
-            background-image: url("img/4.png");
-            height: 830px;
+            background-image: url("img/bg2.gif");
+            height: 860px;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -52,7 +45,7 @@
         }
 
         #parallax-image4{
-            background-image: url("img/5.png");
+            background-image: url("img/3.png");
             height: 830px;          
             background-attachment: fixed;
             background-position: center;
@@ -63,7 +56,7 @@
 
 
         #border1{
-          background-color: red ;
+       
         }
 
 
@@ -75,32 +68,27 @@
 
 <body>
 <!-- HEADER OR NAVBAR -->
-    <div class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">VKFRANCISCO</a>
-            </li>
+<div class="container">
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 mb-4 fixed-top bg-dark navbar-expand-sm ">
 
-            <li class="nav-item">
-                <a class="nav-link" href="#Home">Home</a>
-            </li>
+    <a href="#Home" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+      <img class="bi me-2" width="200" height="52" src="img/logo1.svg"></img>
+    </a>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#About">About</a>
-            </li>
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 ">
+      <li><a href="#Home" class="nav-link btn btn-dark text-light">Home</a></li>
+      <li><a href="#About" class="nav-link btn btn-dark text-light ">About</a></li>
+      <li><a href="#Portfolio" class="nav-link btn btn-dark text-light ">Portfolio</a></li>
+      <li><a href="#Contact" class="nav-link btn btn-dark text-light ">Contact</a></li>
+    
+    </ul>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#Portfolio">Portfolio</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#Contact">Contact</a>
-            </li>
-
-            </ul>
-        </div>
+    <div class="col-md-3 text-end">
     </div>
+    
+  </header>
+</div>
+
 <!-- END OF HEADER -->
 
 <!-- PARALLAX -->
@@ -114,11 +102,14 @@
             
           <h1 class="display-5 fw-bold text-light ">Welcome</h1>
           <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4 text-light">My name is Vann Khryss and I'm a web developer.</p>
+            <p class="lead mb-4 text-light">I'm Vann Khryss a highly motivated and creative web developer
+              seeking a challenging position where I can utilize my skills and experience to create engaging and
+              responsive websites.
+              </p>
 
-            <div class="border border-success p-1 mb-2" id="border1">
+            <div class="border  p-1 mb-2" id="border1">
             <div class="ratio ratio-16x9">
-              <img src="img/vk.png">
+              <img src="img/img.gif">
             </div>
             </div>
             
@@ -152,7 +143,7 @@
                                 <table class="table align-middle">
                                   
                                     <tr>
-                                        <td> Birthday: </td>
+                                        <td> Age: </td>
                                         <td class="align-top"> 21 </td>
                                     </tr>
 
@@ -162,8 +153,8 @@
                                     </tr>
 
                                     <tr>
-                                        <td> City :</td>
-                                        <td class="align-top"> Antipolo City</td>
+                                        <td> Address :</td>
+                                        <td class="align-top">Sitio Bagong Buhay TANAG Brgy San Jose Antipolo City</td>
                                     </tr>
 
                                     <tr>
@@ -172,7 +163,7 @@
                                     </tr>
 
                                     <tr>
-                                        <td>Phone :</td>
+                                        <td>Contact Number :</td>
                                         <td class="align-top"> 09300288503</td>
                                     </tr>
 
@@ -316,7 +307,7 @@
                   
                   <h1 class="display-5 fw-bold text-light ">Portfolio</h1>
                   <div class="col-lg-6 mx-auto">
-                    <p class="lead mb-4 text-light">My Last Projects</p>
+                    <p class="lead mb-4 text-light">My  Projects</p>
                   </div>
                 </div>
 
@@ -328,8 +319,12 @@
                       <div class="card-body">
                         <img src="img/build.gif" class="card-img-top" alt="...">
                         <h5 class="card-title"> First project</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="https://vkfrancisco.github.io/Project1/" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">The Computer Haven Is inspired By other
+                          ordering application but in this project the
+                          computer haven is a sample brand name
+                          and not existing
+                          </p>
+                        <a href="https://vkfrancisco.github.io/Project1/" class="btn btn-primary">Visit Project</a>
                       </div>
                     </div>
                   </div>
@@ -339,8 +334,11 @@
                       <div class="card-body">
                         <img src="img/pizza.png" class="card-img-top" alt="...">
                         <h5 class="card-title">Second Project</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="https://github.com/vkfrancisco/OnlinePizzaDelivery" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">A Pizza Ordering System inspired by other pizza
+                          ordering application which you can order pizza
+                          through online and manage each customer through
+                          admin server</p>
+                        <a href="https://github.com/vkfrancisco/OnlinePizzaDelivery" class="btn btn-primary">Visit Project</a>
                       </div>
                     </div>
                   </div>

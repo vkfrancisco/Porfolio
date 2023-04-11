@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+
+.block{
+    position: relative;
+    width: 50%;
+    height: 400px;
+    margin: 100% auto 0;
+    background: url(img/vk.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.glow::before, .glow::after{
+    content: '';
+    position:absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(-45deg,
+    #00ff66,
+    #00ffff,
+    #ff00ff,
+    #ff0099,
+    #099fff);
+    background-size: 400%;
+    height: calc(100% + 5px);
+    width: calc(100% + 5px);
+    z-index: -1;
+    animation: change 40s linear infinite;
+}
+
+@keyframes change{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.glow::after{
+    filter: blur(40px);
+    opacity: .5;
+}
+
+
+</style>
+
+</head>
+<body>
+
+    <div class="block glow">
+        <h1>CSS Glowing Border</h1>
+    
+    </div>
+
+
+
+</body>
+</html>
